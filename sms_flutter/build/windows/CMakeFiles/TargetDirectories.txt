@@ -1,0 +1,10 @@
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/CMakeFiles/INSTALL.dir
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/CMakeFiles/ALL_BUILD.dir
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/CMakeFiles/ZERO_CHECK.dir
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/flutter/CMakeFiles/flutter_wrapper_plugin.dir
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/flutter/CMakeFiles/flutter_wrapper_app.dir
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/flutter/CMakeFiles/flutter_assemble.dir
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/flutter/CMakeFiles/INSTALL.dir
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/runner/CMakeFiles/sensor_management_service.dir
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/runner/CMakeFiles/INSTALL.dir
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/runner/CMakeFiles/ALL_BUILD.dir

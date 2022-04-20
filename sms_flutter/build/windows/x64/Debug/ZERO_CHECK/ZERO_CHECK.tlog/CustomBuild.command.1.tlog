@@ -1,0 +1,10 @@
+^D:\PROJECT\WATEROS\WATEROS-SMS\SMS_FLUTTER\BUILD\WINDOWS\CMAKEFILES\5F70E876C6E9F6CD29349FDB0D85D304\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Project/wateros/wateros-sms/sms_flutter/windows -BD:/Project/wateros/wateros-sms/sms_flutter/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Project/wateros/wateros-sms/sms_flutter/build/windows/sensor_management_service.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

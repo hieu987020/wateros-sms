@@ -1,0 +1,10 @@
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/runner/Debug/data/icudtl.dat
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/runner/Debug/flutter_windows.dll
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/runner/Debug/data/flutter_assets/assets/images/WaterOS.png
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/runner/Debug/data/flutter_assets/NOTICES
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+D:/Project/wateros/wateros-sms/sms_flutter/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
