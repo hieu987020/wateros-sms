@@ -21,7 +21,7 @@ module.exports = {
 	settings: {
 		// Available fields in the responses
 		fields: [
-			"_id",
+			// "_id",
 			"deviceID",
 			"deviceType",
 			"ownerID",
@@ -70,7 +70,21 @@ module.exports = {
 		 */
 
 		// --- ADDITIONAL ACTIONS ---
-
+		hello: {
+			rest: {
+				method: "GET",
+				path: "/sensor"
+			},
+			async handler() {
+				return [
+					{ sensorID: "INSFLOW_218000000001_01", sensorType: "INFLOW", state: "draft" },
+					{ sensorID: "INSFLOW_218000000001_01", sensorType: "INFLOW", state: "draft" },
+					{ sensorID: "INSFLOW_218000000001_01", sensorType: "INFLOW", state: "draft" },
+					{ sensorID: "INSFLOW_218000000001_01", sensorType: "INFLOW", state: "draft" },
+					{ sensorID: "INSFLOW_218000000001_01", sensorType: "INFLOW", state: "draft" },
+				];
+			}
+		},
 	},
 
 	/**
@@ -84,12 +98,12 @@ module.exports = {
 		 */
 		async seedDB() {
 			await this.adapter.insertMany([
-				{ deviceID: "218000000001", deviceType : "EMS GTI 5.0", ownerID : "THWC", zoneID : "THOA", receiverID : "CSV-R0123456", state : "draft", lastUpdated : "18/03/2020" },
-				{ deviceID: "218000000002", deviceType : "EMS GTI 5.0", ownerID : "THWC", zoneID : "THOA", receiverID : "CSV-R0123456", state : "draft", lastUpdated : "18/03/2020" },
-				{ deviceID: "218000000003", deviceType : "EMS GTI 5.0", ownerID : "THWC", zoneID : "THOA", receiverID : "CSV-R0123456", state : "draft", lastUpdated : "18/03/2020" },
-				{ deviceID: "218000000004", deviceType : "EMS GTI 5.0", ownerID : "THWC", zoneID : "THOA", receiverID : "CSV-R0123456", state : "draft", lastUpdated : "18/03/2020" },
-				{ deviceID: "218000000005", deviceType : "EMS GTI 5.0", ownerID : "THWC", zoneID : "THOA", receiverID : "CSV-R0123456", state : "draft", lastUpdated : "18/03/2020" },
-				{ deviceID: "218000000006", deviceType : "EMS GTI 5.0", ownerID : "THWC", zoneID : "THOA", receiverID : "CSV-R0123456", state : "draft", lastUpdated : "18/03/2020" },
+				{ deviceID: "218000000001", deviceType: "EMS GTI 5.0", ownerID: "THWC", zoneID: "THOA", receiverID: "CSV-R0123456", state: "draft", lastUpdated: "18/03/2020" },
+				{ deviceID: "218000000002", deviceType: "EMS GTI 5.0", ownerID: "THWC", zoneID: "THOA", receiverID: "CSV-R0123456", state: "draft", lastUpdated: "18/03/2020" },
+				{ deviceID: "218000000003", deviceType: "EMS GTI 5.0", ownerID: "THWC", zoneID: "THOA", receiverID: "CSV-R0123456", state: "draft", lastUpdated: "18/03/2020" },
+				{ deviceID: "218000000004", deviceType: "EMS GTI 5.0", ownerID: "THWC", zoneID: "THOA", receiverID: "CSV-R0123456", state: "draft", lastUpdated: "18/03/2020" },
+				{ deviceID: "218000000005", deviceType: "EMS GTI 5.0", ownerID: "THWC", zoneID: "THOA", receiverID: "CSV-R0123456", state: "draft", lastUpdated: "18/03/2020" },
+				{ deviceID: "218000000006", deviceType: "EMS GTI 5.0", ownerID: "THWC", zoneID: "THOA", receiverID: "CSV-R0123456", state: "draft", lastUpdated: "18/03/2020" },
 			]);
 		}
 	},

@@ -21,7 +21,6 @@ module.exports = {
 	settings: {
 		// Available fields in the responses
 		fields: [
-			"_id",
 			"ownerID",
 			"ownerName",
 			"ownerInfo",

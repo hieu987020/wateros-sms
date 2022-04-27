@@ -10,7 +10,7 @@ import 'package:sensor_management_service/sensor_widget.dart';
 class SMSOwnerPage extends GetView<SMSOwnerController> {
   @override
   Widget build(BuildContext context) {
-    // controller.getEdgeDeviceData();
+    controller.getOwnerData();
 
     // Appbar
     const appBar = WaterOSAppbar();

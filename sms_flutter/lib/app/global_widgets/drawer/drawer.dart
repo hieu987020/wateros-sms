@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sensor_management_service/app/data/enums/enums.dart';
-import 'package:sensor_management_service/app/modules/sms_owner/page/owner_page.dart';
 import 'package:sensor_management_service/routes/pages.dart';
 
 class WaterOSDrawer extends StatelessWidget {
@@ -42,7 +41,11 @@ class WaterOSDrawer extends StatelessWidget {
               // Important: Remove any padding from the ListView.
               padding: EdgeInsets.zero,
               children: [
-                DrawerItem(title: DrawerLabel.SMS_EDGED_EVICE, onTap: () {}),
+                DrawerItem(
+                    title: DrawerLabel.SMS_EDGED_EVICE,
+                    onTap: () {
+                      Get.toNamed(Routes.SMS_EDGE_DEVICE);
+                    }),
                 DrawerItem(
                   title: DrawerLabel.SMS_OWNER,
                   onTap: () {
