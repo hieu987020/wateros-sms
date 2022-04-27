@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sensor_management_service/app/data/enums/enums.dart';
-import 'package:sensor_management_service/app/modules/sms_owner/page/page.dart';
+import 'package:sensor_management_service/app/modules/sms_owner/page/owner_page.dart';
 import 'package:sensor_management_service/routes/pages.dart';
 
 class WaterOSDrawer extends StatelessWidget {

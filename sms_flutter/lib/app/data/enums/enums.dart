@@ -38,6 +38,14 @@ abstract class EdgeDeviceLabel {
   static const ACTION = "Action";
 }
 
+abstract class OwnerLabel {
+  static const OWNER_ID = "Owner ID";
+  static const OWNER_NAME = "Owner Name";
+  static const OWNER_INFO = "Owner Info";
+  static const STATE = "State";
+  static const ACTION = "Action";
+}
+
 abstract class ConstColumn {
   static const DEVICE_ID = "Device ID";
   static const DEVICE_TYPE = "Device Type";

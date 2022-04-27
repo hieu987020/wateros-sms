@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
+import 'package:sensor_management_service/app/data/services/services.dart';
 import 'package:sensor_management_service/app/modules/sms_edgedevice/sms_edgedevice.dart';
-import '../../../data/services/services.dart';
 
 class SMSEdgeDeviceController extends GetxController {
   var edgeDeviceDataSource = EdgeDeviceDataSource(edgeDeviceData: []).obs;

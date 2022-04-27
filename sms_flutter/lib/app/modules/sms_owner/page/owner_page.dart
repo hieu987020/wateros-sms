@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/state_manager.dart';
 import 'package:sensor_management_service/app/global_widgets/global_widgets.dart';
-import 'package:sensor_management_service/app/modules/sms_owner/controller/controller.dart';
+import 'package:sensor_management_service/app/modules/sms_owner/sms_owner.dart';
 import 'package:sensor_management_service/sensor_widget.dart';
 
 // ignore: must_be_immutable
@@ -25,10 +25,9 @@ class SMSOwnerPage extends GetView<SMSOwnerController> {
     );
 
     // Edge Device Table
-    // var edgeDeviceTable = Obx(
-    //   () => EdgeDeviceTable(
-    //       edgeDeviceDataSource: controller.edgeDeviceDataSource.value),
-    // );
+    var ownerTable = Obx(
+      () => OwnerTable(ownerDataSource: controller.ownerDataSource.value),
+    );
 
     // Sensor Widget
     const sensorWidget = Padding(
@@ -52,7 +51,7 @@ class SMSOwnerPage extends GetView<SMSOwnerController> {
                   drawer,
 
                   //Edge Device Table
-                  // edgeDeviceTable,
+                  ownerTable,
 
                   //Sensor Widget
                   sensorWidget,
