@@ -1,1 +1,1 @@
-export 'edgeDevice.services.dart';
+export 'edgedevice.services.dart';

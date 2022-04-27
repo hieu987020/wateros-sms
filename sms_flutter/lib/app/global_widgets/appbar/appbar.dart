@@ -9,9 +9,10 @@ class WaterOSAppbar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.white,
-      elevation: 4,
+      toolbarHeight: 99,
+      elevation: 10,
       title: SizedBox(
-        height: 99,
+        height: 70,
         child: Row(
           children: [
             Image.asset('assets/images/WaterOS.png'),
