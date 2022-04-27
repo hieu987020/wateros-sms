@@ -14,10 +14,7 @@ class SMSEdgeDeviceView extends GetView<SMSEdgeDeviceController> {
     controller.getEdgeDeviceData();
 
     // Appbar
-    const appBar = Padding(
-      padding: EdgeInsets.only(bottom: 10),
-      child: WaterOSAppbar(),
-    );
+    const appBar = WaterOSAppbar();
 
     // Drawer
     var drawer = Padding(
@@ -42,26 +39,27 @@ class SMSEdgeDeviceView extends GetView<SMSEdgeDeviceController> {
 
     return Scaffold(
       backgroundColor: const Color(0xffF0F0F0),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            //Appbar
-            //
-            appBar,
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                //Drawer
-                drawer,
+      appBar: appBar,
+      body: Padding(
+        padding: const EdgeInsets.only(top: 10),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  //Drawer
+                  drawer,
 
-                //Edge Device Table
-                edgeDeviceTable,
+                  //Edge Device Table
+                  edgeDeviceTable,
 
-                //Sensor Widget
-                sensorWidget,
-              ],
-            ),
-          ],
+                  //Sensor Widget
+                  sensorWidget,
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -2,10 +2,10 @@
 // JsonSerializableGenerator
 // **************************************************************************
 
-ProductObject _$ProductObjectFromJson(Map<String, dynamic> json) =>
-    ProductObject(
+EdgeDeviceObject _$EdgeDeviceObjectFromJson(Map<String, dynamic> json) =>
+    EdgeDeviceObject(
       rows: (json['rows'] as List<dynamic>?)
-          ?.map((e) => Product.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => EdgeDevice.fromJson(e as Map<String, dynamic>))
           .toList(),
       total: json['total'] as int?,
       page: json['page'] as int?,
@@ -13,7 +13,7 @@ ProductObject _$ProductObjectFromJson(Map<String, dynamic> json) =>
       totalPages: json['totalPages'] as int?,
     );
 
-Map<String, dynamic> _$ProductObjectToJson(ProductObject instance) =>
+Map<String, dynamic> _$EdgeDeviceObjectToJson(EdgeDeviceObject instance) =>
     <String, dynamic>{
       'rows': instance.rows,
       'total': instance.total,

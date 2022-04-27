@@ -2,30 +2,30 @@ import 'package:retrofit/retrofit.dart';
 import 'package:dio/dio.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-import 'product.dart';
+import 'edgeDevice.dart';
 
-part 'productObj.g.dart';
+part 'edgeDeviceObj.g.dart';
 
 @RestApi(baseUrl: "http://localhost:3000/api/")
 abstract class RestClient {
   factory RestClient(Dio dio, {String baseUrl}) = _RestClient;
 
-  @GET("/products")
-  Future<ProductObject> getProductObjects();
+  @GET("/edgeDevice")
+  Future<EdgeDeviceObject> getEdgeDeviceObjects();
 }
 
 @JsonSerializable()
-class ProductObject {
-  List<Product>? rows;
+class EdgeDeviceObject {
+  List<EdgeDevice>? rows;
   int? total;
   int? page;
   int? pageSize;
   int? totalPages;
 
-  ProductObject(
+  EdgeDeviceObject(
       {this.rows, this.total, this.page, this.pageSize, this.totalPages});
 
-  factory ProductObject.fromJson(Map<String, dynamic> json) =>
-      _$ProductObjectFromJson(json);
-  Map<String, dynamic> toJson() => _$ProductObjectToJson(this);
+  factory EdgeDeviceObject.fromJson(Map<String, dynamic> json) =>
+      _$EdgeDeviceObjectFromJson(json);
+  Map<String, dynamic> toJson() => _$EdgeDeviceObjectToJson(this);
 }

@@ -1,21 +1,29 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'product.dart';
+part of 'edgeDeviceObj.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-Product _$ProductFromJson(Map<String, dynamic> json) => Product(
-      name: json['name'] as String?,
-      quantity: json['quantity'] as int?,
-      price: json['price'] as int?,
+EdgeDeviceObject _$EdgeDeviceObjectFromJson(Map<String, dynamic> json) =>
+    EdgeDeviceObject(
+      rows: (json['rows'] as List<dynamic>?)
+          ?.map((e) => EdgeDevice.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      total: json['total'] as int?,
+      page: json['page'] as int?,
+      pageSize: json['pageSize'] as int?,
+      totalPages: json['totalPages'] as int?,
     );
 
-Map<String, dynamic> _$ProductToJson(Product instance) => <String, dynamic>{
-      'name': instance.name,
-      'quantity': instance.quantity,
-      'price': instance.price,
+Map<String, dynamic> _$EdgeDeviceObjectToJson(EdgeDeviceObject instance) =>
+    <String, dynamic>{
+      'rows': instance.rows,
+      'total': instance.total,
+      'page': instance.page,
+      'pageSize': instance.pageSize,
+      'totalPages': instance.totalPages,
     };
 
 // **************************************************************************
@@ -34,20 +42,18 @@ class _RestClient implements RestClient {
   String? baseUrl;
 
   @override
-  Future<List<Product>> getProducts() async {
+  Future<EdgeDeviceObject> getEdgeDeviceObjects() async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     final _data = <String, dynamic>{};
-    final _result = await _dio.fetch<List<dynamic>>(
-        _setStreamType<List<Product>>(
+    final _result = await _dio.fetch<Map<String, dynamic>>(
+        _setStreamType<EdgeDeviceObject>(
             Options(method: 'GET', headers: _headers, extra: _extra)
-                .compose(_dio.options, '/products',
+                .compose(_dio.options, '/edgeDevice',
                     queryParameters: queryParameters, data: _data)
                 .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
-    var value = _result.data!
-        .map((dynamic i) => Product.fromJson(i as Map<String, dynamic>))
-        .toList();
+    final value = EdgeDeviceObject.fromJson(_result.data!);
     return value;
   }
 

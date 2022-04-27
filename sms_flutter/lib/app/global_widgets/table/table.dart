@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:sensor_management_service/app/global_widgets/table/datasource.dart';
 import 'package:syncfusion_flutter_datagrid/datagrid.dart';
 import 'package:syncfusion_flutter_core/theme.dart';
 
-class WaterOSTable extends StatelessWidget {
-  WaterOSTable({
+class WosDataGrid extends StatelessWidget {
+  WosDataGrid({
     Key? key,
-    required this.edgeDeviceDataSource,
+    required this.dataGridSource,
     this.list,
   }) : super(key: key);
 
-  final EdgeDeviceDataSource edgeDeviceDataSource;
+  final DataGridSource dataGridSource;
   final List<String>? list;
 
   List<GridColumn> createColumns(List<String>? list) {
@@ -64,7 +63,7 @@ class WaterOSTable extends StatelessWidget {
         onSelectionChanged: (a, b) {},
         gridLinesVisibility: GridLinesVisibility.both,
         headerGridLinesVisibility: GridLinesVisibility.both,
-        source: edgeDeviceDataSource,
+        source: dataGridSource,
         controller: getDataGridController(),
         columns: createColumns(list),
       ),
