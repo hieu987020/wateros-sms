@@ -15,13 +15,13 @@ class EdgeDeviceTable extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<String> list = [
-      ConstLabel.DEVICE_ID,
-      ConstLabel.DEVICE_TYPE,
-      ConstLabel.OWNER_ID,
-      ConstLabel.ZONE_ID,
-      ConstLabel.RECEIVER_ID,
-      ConstLabel.STATE,
-      ConstLabel.LAST_UPDATED,
+      EdgeDeviceLabel.DEVICE_ID,
+      EdgeDeviceLabel.DEVICE_TYPE,
+      EdgeDeviceLabel.OWNER_ID,
+      EdgeDeviceLabel.ZONE_ID,
+      EdgeDeviceLabel.RECEIVER_ID,
+      EdgeDeviceLabel.STATE,
+      EdgeDeviceLabel.LAST_UPDATED,
     ];
 
     return Expanded(
@@ -84,18 +84,19 @@ class EdgeDeviceDataSource extends DataGridSource {
         return DataGridRow(
           cells: [
             DataGridCell<String>(
-                columnName: ConstLabel.DEVICE_ID, value: e.deviceID),
+                columnName: EdgeDeviceLabel.DEVICE_ID, value: e.deviceID),
             DataGridCell<String>(
-                columnName: ConstLabel.DEVICE_TYPE, value: e.deviceType),
+                columnName: EdgeDeviceLabel.DEVICE_TYPE, value: e.deviceType),
             DataGridCell<String>(
-                columnName: ConstLabel.OWNER_ID, value: e.ownerID),
+                columnName: EdgeDeviceLabel.OWNER_ID, value: e.ownerID),
             DataGridCell<String>(
-                columnName: ConstLabel.ZONE_ID, value: e.zoneID),
+                columnName: EdgeDeviceLabel.ZONE_ID, value: e.zoneID),
             DataGridCell<String>(
-                columnName: ConstLabel.RECEIVER_ID, value: e.receiverID),
-            DataGridCell<String>(columnName: ConstLabel.STATE, value: e.state),
+                columnName: EdgeDeviceLabel.RECEIVER_ID, value: e.receiverID),
             DataGridCell<String>(
-                columnName: ConstLabel.LAST_UPDATED, value: e.lastUpdated),
+                columnName: EdgeDeviceLabel.STATE, value: e.state),
+            DataGridCell<String>(
+                columnName: EdgeDeviceLabel.LAST_UPDATED, value: e.lastUpdated),
           ],
         );
       },

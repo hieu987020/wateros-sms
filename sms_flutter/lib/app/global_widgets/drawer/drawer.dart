@@ -1,12 +1,10 @@
-import 'dart:async';
+// ignore_for_file: constant_identifier_names
 
 import 'package:flutter/material.dart';
-
-const EDGE_DEVICE = "Edge Device";
-const OWNER = "Owner";
-const ZONE = "Zone";
-const SENSOR_TYPE_NAME = "Sensor Type Name";
-const SENSOR_RECEIVER = "Sensor Receiver";
+import 'package:get/get.dart';
+import 'package:sensor_management_service/app/data/enums/enums.dart';
+import 'package:sensor_management_service/app/modules/sms_owner/page/page.dart';
+import 'package:sensor_management_service/routes/pages.dart';
 
 class WaterOSDrawer extends StatelessWidget {
   const WaterOSDrawer({
@@ -44,11 +42,18 @@ class WaterOSDrawer extends StatelessWidget {
               // Important: Remove any padding from the ListView.
               padding: EdgeInsets.zero,
               children: [
-                DrawerItem(title: EDGE_DEVICE, onTap: () {}),
-                DrawerItem(title: OWNER, onTap: () {}),
-                DrawerItem(title: ZONE, onTap: () {}),
-                DrawerItem(title: SENSOR_TYPE_NAME, onTap: () {}),
-                DrawerItem(title: SENSOR_RECEIVER, onTap: () {}),
+                DrawerItem(title: DrawerLabel.SMS_EDGED_EVICE, onTap: () {}),
+                DrawerItem(
+                  title: DrawerLabel.SMS_OWNER,
+                  onTap: () {
+                    Get.toNamed(Routes.SMS_OWNER);
+                  },
+                ),
+                DrawerItem(title: DrawerLabel.SMS_ZONE, onTap: () {}),
+                DrawerItem(
+                    title: DrawerLabel.SMS_SENSOR_TYPE_NAME, onTap: () {}),
+                DrawerItem(
+                    title: DrawerLabel.SMS_SENSOR_RECEIVER, onTap: () {}),
               ],
             ),
           ),

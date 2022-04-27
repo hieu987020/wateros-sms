@@ -1,7 +1,3 @@
-sensor_management_service
-2.16
-file:///Users/hieuhd/Desktop/code/wateros-sms/sms_flutter/
-file:///Users/hieuhd/Desktop/code/wateros-sms/sms_flutter/lib/
 _fe_analyzer_shared
 2.12
 file:///Users/hieuhd/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/_fe_analyzer_shared-38.0.0/
@@ -310,4 +306,8 @@ flutter_test
 2.12
 file:///Users/hieuhd/FlutterDev/flutter/packages/flutter_test/
 file:///Users/hieuhd/FlutterDev/flutter/packages/flutter_test/lib/
+sensor_management_service
+2.16
+file:///Users/hieuhd/code/wateros-sms/sms_flutter/
+file:///Users/hieuhd/code/wateros-sms/sms_flutter/lib/
 2

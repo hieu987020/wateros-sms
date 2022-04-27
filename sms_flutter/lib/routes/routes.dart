@@ -1,13 +1,11 @@
+// ignore_for_file: constant_identifier_names
+
 part of 'pages.dart';
 
 abstract class Routes {
-  Routes._();
-  // ignore: constant_identifier_names
-  static const SMS_EDGE_DEVICE = _Paths.SMSEdgeDevice;
-}
-
-abstract class _Paths {
-  _Paths._();
-  // ignore: constant_identifier_names
-  static const SMSEdgeDevice = '/sms_edge_device';
+  static const SMS_EDGE_DEVICE = Path.SMS_EDGED_EVICE;
+  static const SMS_OWNER = Path.SMS_OWNER;
+  static const SMS_ZONE = Path.SMS_ZONE;
+  static const SMS_SENSOR_TYPE_NAME = Path.SMS_SENSOR_TYPE_NAME;
+  static const SMS_SENSOR_RECEIVER = Path.SMS_SENSOR_RECEIVER;
 }
